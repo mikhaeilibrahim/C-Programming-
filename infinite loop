@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    unsigned char x;
+
+    for(x=1;x<=300;x++)
+    {
+        printf("%d\n",x);
+    }
+
+    printf("Final x=%d\n",x);
+
+    return 0;
+}
