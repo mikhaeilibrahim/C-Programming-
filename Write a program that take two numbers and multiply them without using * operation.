@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    signed int x,y,result,i;
+
+    while(1)
+    {
+
+        printf("Enter two numbers to multiply\n");
+        scanf("%d%d",&x,&y);
+        result=0;
+
+        for(i=y; i>0; i--)
+        {
+            result=x+result;
+        }
+
+        printf("Result=%d\n",result);
+
+    }
+
+    return 0;
+}
