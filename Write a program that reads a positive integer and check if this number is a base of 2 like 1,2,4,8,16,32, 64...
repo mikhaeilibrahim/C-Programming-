@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    signed int x,i,flag,div;
+
+    while(1)
+    {
+        printf("Enter number to check base of 2\n");
+        scanf("%d",&x);
+        flag=0;
+
+        if(x==0)
+        {
+            flag=1;
+        }
+
+        for(i=x; i>1; i=i/2)
+        {
+            if (i%2 != 0)
+            {
+                flag=1;
+            }
+        }
+
+        if(flag==0)
+        {
+            printf("%d Base of 2\n",x);
+        }
+        else
+        {
+            printf("%d Not Base of 2\n",x);
+        }
+    }
+
+    return 0;
+}
