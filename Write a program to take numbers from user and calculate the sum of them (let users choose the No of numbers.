@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    signed int x,y,sum,i;
+
+    while(1)
+    {
+
+        printf("Enter number of numbers you want to sum\n");
+        scanf("%d",&x);
+        sum=0;
+
+        for(i=x; i>0; i--)
+        {
+            scanf("%d",&y);
+            sum=sum+y;
+        }
+
+        printf("Sum=%d\n",sum);
+
+    }
+
+    return 0;
+}
