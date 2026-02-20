@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    signed int x,y,div,mul,result;
+
+    while(1)
+    {
+
+        printf("Enter to numbers to get the reminder\n");
+        scanf("%d%d",&x,&y);
+
+        div=x/y;
+        mul=div*y;
+        result=x-mul;
+
+        printf("Result=%d\n",result);
+        printf("Check=%d\n",x%y);
+
+    }
+
+    return 0;
+}
