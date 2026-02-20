@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    signed int x,y,max,min,i;
+
+    while(1)
+    {
+        printf("Enter number of numbers you want to check\n");
+        scanf("%d",&x);
+        max=0x80000000;
+        min=0x7fffffff;
+
+        for(i=x; i>0; i--)
+        {
+            scanf("%d",&y);
+            if(y>max)
+            {
+                max=y;
+            }
+            if(y<min)
+            {
+                min=y;
+            }
+        }
+        printf("Max=%d   Min=%d   \n",max,min);
+
+
+    }
+
+    return 0;
+}
