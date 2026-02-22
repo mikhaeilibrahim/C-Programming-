@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    unsigned int x,y,z,result;
+
+    while(1)
+    {
+        printf("Hello Calculator\n");
+        fflush(stdin);
+        scanf("%d%c%d",&x,&y,&z);
+
+        if(y=='+')
+        {
+            result=x+z;
+        }
+        else if (y=='-')
+        {
+            result=x-z;
+        }
+        else if (y=='*')
+        {
+            result=x*z;
+        }
+        else if (y=='/')
+        {
+            result=x/z;     // x/0 error
+        }
+        else
+        {
+            printf("Error\n");
+        }
+
+        printf("Result=%d\n",result);
+
+    }
+    return 0;
+}
