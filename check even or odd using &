@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    unsigned int x,y,z;
+
+    while(1)
+    {
+        printf("Enter number to check even or odd\n");
+        scanf("%d",&x);
+
+        if(x&1)
+        {
+            printf("Odd\n");
+        }
+        else
+        {
+            printf("Even\n");
+        }
+    }
+
+    return 0;
+}
