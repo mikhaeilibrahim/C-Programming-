@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    unsigned int x,b;
+
+    while(1)
+    {
+
+        x=8;
+        printf("set bit\n");
+        scanf("%d",&b);
+
+        printf("old x=%d\n",x);
+        x=x|(1<<b);        // set bit equation 
+        printf("New x=%d\n",x);
+
+    }
+    return 0;
+}
