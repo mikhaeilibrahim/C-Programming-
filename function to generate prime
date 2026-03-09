@@ -1,0 +1,30 @@
+void Generate_prime(int n)
+{
+    int i,c=0;
+    for(i=0; c<n ; i++)
+    {
+        if(isprime(i))
+        {
+            c++;
+            printf("%d  ",i);
+        }
+    }
+    printf("\n");
+    return ;
+}
+
+
+int main()
+{
+    unsigned int x;
+    while(1)
+    {
+        scanf("%d",&x);
+        Generate_prime(x);
+
+    }
+
+
+
+    return 0;
+}
