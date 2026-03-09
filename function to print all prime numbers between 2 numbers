@@ -1,0 +1,12 @@
+void primebetween2numbers(int n1,int n2)
+{
+    int i;
+    for(i=n1; i<n2; i++)
+    {
+        if(isprime(i))
+        {
+            printf("%d ",i);
+        }
+    }
+    printf("\n");
+}
