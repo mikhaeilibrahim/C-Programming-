@@ -1,0 +1,27 @@
+int main()
+{
+    int x,i,digit,hole;
+
+    while(1)
+    {
+        hole=0;
+        scanf("%d",&x);  //3467
+
+        for(i=x; i>0; i=i/10)
+        {
+           digit=i%10;
+           if(digit==0 || digit==4 || digit==6 || digit==9 )
+           {
+              hole++;
+           }
+           else if(digit==8)
+           {
+               hole=hole+2;
+           }
+        }
+        printf("Holes=%d\n",hole);
+    }
+
+
+    return 0;
+}
