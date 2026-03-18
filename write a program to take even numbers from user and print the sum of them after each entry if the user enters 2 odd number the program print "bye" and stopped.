@@ -1,0 +1,24 @@
+int main()
+{
+    int x,sum,flag,i;
+
+        sum=0;
+        flag=0;
+        for(i=0; i<=0x7fffffff && flag<2; i++)
+        {
+            scanf("%d",&x);
+            if(x%2==0)  //even
+            {
+                flag=0;
+                sum=sum+x;
+                printf("Sum=%d\n",sum);
+            }
+            else
+            {
+                flag++;
+            }
+        }
+        printf("Bye\n");
+
+    return 0;
+}
