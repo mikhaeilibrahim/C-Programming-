@@ -1,0 +1,36 @@
+int power(int b,int p)
+{
+    int i,r=1;
+    for(i=p; i>0; i--)
+    {
+        r=b*r;
+    }
+    return r;
+}
+
+int main()
+{
+    int x,y,i,digits;
+
+    while(1)
+    {
+        digits=0;
+        y=0;
+      printf("Enter Number to reverse\n");  //345
+      scanf("%d",&x);
+
+      for(i=x;i>0;i=i/10)
+      {
+          digits++;
+      }
+      printf("digits=%d\n",digits);
+
+      for(i=x;i>0 && digits>0;i=i/10)
+      {
+          y=((i%10)*(power(10,digits-1)))+y;
+          digits--;
+      }
+       printf("resversed num=%d\n",y);
+    }
+    return 0;
+}
