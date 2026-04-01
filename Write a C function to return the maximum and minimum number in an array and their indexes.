@@ -1,0 +1,22 @@
+int array_max_min(int*parr,int size,int*pmax,int*pmin,int*pindexmax)
+{
+    int i,max=parr[0],min=parr[0],indexmin,indexmax;
+    for(i=0;i<size;i++)
+    {
+      if(parr[i]>=max)
+      {
+          max=parr[i];
+          indexmax=i;
+      }
+      if(parr[i]<=min)
+      {
+          min=parr[i];
+          indexmin=i;
+      }
+    }
+    *pmax=max;
+    *pmin=min;
+    *pindexmax=indexmax;
+    return indexmin;
+
+}
