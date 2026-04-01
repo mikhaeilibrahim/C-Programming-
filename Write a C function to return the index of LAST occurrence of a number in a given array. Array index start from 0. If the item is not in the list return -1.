@@ -1,0 +1,19 @@
+int array_search_lastapperance(int*parr,int size,int num)
+{
+    int i,flag=-1;
+    for(i=0;i<size;i++)
+    {
+        if(num==parr[i])
+        {
+          flag=i;
+        }
+    }
+    if(flag==-1)
+    {
+        return -1;
+    }
+    else
+    {
+        return flag;
+    }
+}
