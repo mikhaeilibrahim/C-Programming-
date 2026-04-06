@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+unsigned char reverse_binary(unsigned char n)
+{
+    int i,y=0,j;
+    for(i=0,j=7;i<=7,j>=0;i++,j--)
+    {
+          if((n>>i)&1)
+          {
+              y=y|(1<<j);
+          }
+    }
+    return y;
+}
+
+
+
+int main()
+{
+   int x=0b00110011;
+   print_binary2(x);
+   x=reverse_binary(x);
+   print_binary2(x);
+
+
+    return 0;
+}
