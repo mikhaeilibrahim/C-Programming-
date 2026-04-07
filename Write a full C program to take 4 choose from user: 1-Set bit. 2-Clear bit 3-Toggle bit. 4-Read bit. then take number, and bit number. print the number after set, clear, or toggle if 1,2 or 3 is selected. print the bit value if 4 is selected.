@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void bit_operations(int number,int bit_number)
+{
+    int op;
+    printf("Enter number of operation:\n1:set bit\n2:clear bit\n3:Toggle bit\n4:Read bit\n");
+    scanf("%d",&op);
+
+    if(op==1)
+    {
+        number=number|(1<<bit_number);
+    }
+    else if (op==2)
+    {
+        number=number&~(1<<bit_number);
+    }
+    else if (op==3)
+    {
+        if((number>>bit_number)&1)
+        {
+            number=number&~(1<<bit_number);
+        }
+        else
+        {
+            number=number|(1<<bit_number);
+        }
+    }
+    else if (op==4)
+    {
+        if((number>>bit_number)&1)
+        {
+            printf("1\n");
+        }
+        else
+        {
+            printf("0\n");
+        }
+    }
+    printf("Newn=%d\n",number);
+}
+
+
+int main()
+{
+    int number,bit_number;
+    while(1)
+    {
+        printf("Enter number and bit_number\n");
+        scanf("%d%d",&number,&bit_number);
+        print_binary2(number);
+
+        bit_operations(number,bit_number);
+    }
+
+
+
+    return 0;
+}
